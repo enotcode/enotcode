@@ -1,0 +1,30 @@
+.resume {
+  flex-basis: 900px;
+}
+
+main {
+  grid-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (min-width: 900px) {
+  main {
+    display: grid;
+    grid-template-areas: "skills bio bio" "skills projects projects" "skills contact contact";
+  }
+}
+
+.bio {
+  grid-area: bio;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.contact {
+  grid-area: contact;
+}
+
+.skills {
+  grid-area: skills;
+}
